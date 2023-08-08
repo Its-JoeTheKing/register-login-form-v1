@@ -6,12 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sign Up</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" >
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 	<div class="cont">
-		<form class="login" method="POST" action="/login" autocomplete="off">
+		<form class="login" autocomplete="off">
 			@csrf
 			<h1>LOGIN</h1>
 			<div class="controller">
@@ -33,7 +33,7 @@
 			<h1 id="msg">SIGN UP TODAY !!</h1>
 			<button id="switch">Sign in</button>
 		</div>
-		<form class="login" method="POST" action="/signup" autocomplete="off">
+		<form class="login" autocomplete="off">
 			@csrf
 			<h1>SIGN UP</h1>
 			<div class="controller">
@@ -58,5 +58,5 @@
 		</form>
 	</div>
 </body>
-<script src="{{ asset('script.js') }}"></script>
+<script src="script.js"></script>
 </html>
